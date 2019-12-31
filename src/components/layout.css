@@ -620,3 +620,45 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+#pinContainer {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#pinContainer .panel {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+}
+.panel span {
+  position: relative;
+  display: block;
+  top: 50%;
+  font-size: 80px;
+}
+
+.panel.blue {
+  background-color: #3883d8;
+}
+.panel.blue {
+  background-color: #3883d8;
+}
+
+
+.panel.turqoise {
+  background-color: #38ced7;
+}
+
+.panel.green {
+  background-color: #22d659;
+}
+
+.panel.bordeaux {
+  background-color: #953543;
+}
+
+.scrollmagic-pin-spacer {
+/* display: none!important; */
+}
