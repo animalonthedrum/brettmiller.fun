@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from '@emotion/styled'
-// import Layout from "../components/layout"
 import SectionWipes2 from "../components/test"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 const Container = styled('div')`
 height:100vh;
@@ -18,7 +17,7 @@ background-color:purple;
 `
 
 const SecondPage = () => (
-  <div>
+  <Layout>
     <SEO title="Page two" />
     <Container>
       <h1>Page Title</h1>
@@ -26,7 +25,8 @@ const SecondPage = () => (
       <h4>page sub heading</h4>
     </Container>
     <SectionWipes2/>
-  </div>
+  </Layout>
 )
 
 export default SecondPage
+

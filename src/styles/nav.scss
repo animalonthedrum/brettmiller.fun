@@ -1,0 +1,36 @@
+.scrollbar.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.6s;
+    z-index: 1000;
+    &.scrollbar-hidden {
+        top: -53px;
+      }
+  }
+  
+  .menuButton {
+      button{
+          background-color: transparent;
+          -webkit-appearance: none;
+          border: 0;
+          outline: none;
+          height: 50px;
+          width: 50px;
+          svg {
+              width: 100%;
+              height: 100%;
+            path{
+                fill: transparent;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+          }
+      }
+  }
