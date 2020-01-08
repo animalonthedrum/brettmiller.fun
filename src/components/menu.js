@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useLockBodyScroll from './use-lock-body-scroll';
 import { Link } from "gatsby"
-import styled from '@emotion/styled'
+// import styled from '@emotion/styled'
 
 function Icon() {
   return (
@@ -19,6 +19,29 @@ function Icon() {
 
 function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    var isScrolling;
+    console.log('scroll');
+    const topOffset = () => {
+      window.clearTimeout( isScrolling );
+
+      // Set a timeout to run after scrolling ends
+      isScrolling = setTimeout(function() {
+    
+        // Run the callback
+        console.log( 'Scrolling has stopped.' );
+    
+      }, 100);
+    }
+    window.addEventListener("scroll", topOffset);
+    return () => {
+      console.log('unscroll');
+      window.removeEventListener("scroll", topOffset);
+    };
+  }, [])
+
+
 
   return (
     <div>

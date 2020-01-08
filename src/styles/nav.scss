@@ -8,8 +8,22 @@
     left: 0;
     transition: top 0.6s;
     z-index: 1000;
+    ul{
+        display: flex;
+        list-style: none;
+        li {
+            padding-left: 8px;
+            padding-right: 8px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
     &.scrollbar-hidden {
         top: -53px;
+        .stopShow & {
+            top: 0;
+        }
       }
   }
   
