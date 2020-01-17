@@ -20,7 +20,7 @@
         }
     }
     &.scrollbar-hidden {
-        top: -53px;
+        top: -55px;
         .stopShow & {
             top: 0;
         }
@@ -47,4 +47,16 @@
               }
           }
       }
+  }
+
+
+.box {
+    transition:width .3s linear;
+}
+[data-visible="true"] {
+    width:10%;
+  }
+  [data-visible="false"] {
+    width:100%;
+    transition:width .3s linear;
   }

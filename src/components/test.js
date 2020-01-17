@@ -1,11 +1,10 @@
 import React from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
-// import Footer from "../components/footer"
 import PgaMain from "./pga_jr"
 import Sticky from './sticky';
-
 import "./layout.css"
+import StaggerCards from './staggerCards';
 
 const SectionWipes2 = () => (
   <div>
@@ -40,7 +39,6 @@ const SectionWipes2 = () => (
             <section className="panel bordeaux"><span>
               <h1>Hitch</h1>
             </span>
-            {/* <Footer/> */}
             </section>
           </Tween>
           <Tween
